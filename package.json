@@ -1,6 +1,6 @@
 {
   "name": "create-karyum-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React setup made by @Karyum",
   "main": "index.js",
   "scripts": {
