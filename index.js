@@ -7,6 +7,6 @@ if (!process.argv[2]) {
   return;
 }
 
-require('./ms.js');
+require('./CreateKaryumApp.js');
 
 console.log('Fetching files ..');
