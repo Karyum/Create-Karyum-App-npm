@@ -7,5 +7,5 @@ clone('git@github.com:Karyum/React-Simple-Setup.git', path, err => {
     console.log('Something messed up mate what happend?');
   }
 
-  console.log('Enjoy the Balance');
+  console.log('Done. Enjoy the Balance');
 });

@@ -2,4 +2,4 @@
 
 require('./ms.js');
 
-console.log('Behold!');
+console.log('Fetching files ..');
