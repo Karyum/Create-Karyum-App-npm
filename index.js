@@ -2,4 +2,4 @@
 
 require('./ms.js');
 
-console.log(1);
+console.log('Behold!');

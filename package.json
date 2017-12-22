@@ -13,5 +13,8 @@
     "ms.js"
   ],
   "author": "Karyum",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "git-clone": "^0.1.0"
+  }
 }
