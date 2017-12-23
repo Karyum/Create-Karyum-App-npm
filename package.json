@@ -14,7 +14,5 @@
   ],
   "author": "Karyum",
   "license": "ISC",
-  "dependencies": {
-    "git-clone": "^0.1.0"
-  }
+  "dependencies": {}
 }

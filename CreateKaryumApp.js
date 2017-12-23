@@ -1,4 +1,4 @@
-const clone = require('git-clone');
+const clone = require('./util/clone-repo.js');
 
 const path = `${process.env.PWD}/${process.argv[2]}`;
 
