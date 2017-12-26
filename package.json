@@ -1,6 +1,6 @@
 {
   "name": "create-karyum-app",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "description": "A React setup made by @Karyum",
   "bin": {
     "create-karyum-app": "./index.js"
@@ -8,7 +8,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": ["index.js", "CreateKaryumApp.js", "util/clone-repo.js"],
+  "files": [
+    "index.js",
+    "CreateKaryumApp.js",
+    "util/clone-repo.js"
+  ],
   "author": "Karyum",
   "license": "ISC",
   "dependencies": {}
