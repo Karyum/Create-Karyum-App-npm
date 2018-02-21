@@ -11,9 +11,13 @@
   "files": [
     "index.js",
     "CreateKaryumApp.js",
-    "util/clone-repo.js"
+    "util/clone-repo.js",
+    "util/rmeove-git.js"
   ],
+  "keywords": ["react", "karyum", "balance"],
   "author": "Karyum",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "inquirer": "^5.1.0"
+  }
 }
