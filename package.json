@@ -1,6 +1,6 @@
 {
   "name": "create-karyum-app",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "A React setup made by @Karyum",
   "bin": {
     "create-karyum-app": "./index.js"
