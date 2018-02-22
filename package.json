@@ -8,17 +8,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "index.js",
-    "CreateKaryumApp.js",
-    "util/clone-repo.js",
-    "util/rmeove-git.js"
-  ],
-  "keywords": [
-    "react",
-    "karyum",
-    "balance"
-  ],
+
+  "keywords": ["react", "karyum", "balance"],
   "author": "Karyum",
   "license": "ISC",
   "dependencies": {
