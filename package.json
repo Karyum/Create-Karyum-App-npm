@@ -1,6 +1,6 @@
 {
   "name": "create-karyum-app",
-  "version": "3.3.5",
+  "version": "3.3.6",
   "description": "A React setup made by @Karyum",
   "bin": {
     "create-karyum-app": "./index.js"
@@ -14,7 +14,11 @@
     "util/clone-repo.js",
     "util/rmeove-git.js"
   ],
-  "keywords": ["react", "karyum", "balance"],
+  "keywords": [
+    "react",
+    "karyum",
+    "balance"
+  ],
   "author": "Karyum",
   "license": "ISC",
   "dependencies": {
