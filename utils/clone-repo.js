@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 
-module.exports = ({ repo, path }) => {
-  return new Promise((resolve, reject) => {
+module.exports = ({ repo, path }) =>
+  new Promise((resolve, reject) => {
     const process = spawn('git', ['clone', repo, path]);
 
     process.on('error', reject);
@@ -15,4 +15,3 @@ module.exports = ({ repo, path }) => {
       }
     });
   });
-};

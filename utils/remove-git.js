@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 const { promisify } = require('util');
 const asyncExec = promisify(exec);
 
-module.exports = ({ path }) => {
+module.exports = ({ path }) =>
   new Promise((resolve, reject) => {
     asyncExec(`rm -rf ${path}/.git`)
       .then(resolve)
@@ -14,4 +14,3 @@ module.exports = ({ path }) => {
         ),
       );
   });
-};
