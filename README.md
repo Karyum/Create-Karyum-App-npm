@@ -2,7 +2,7 @@ This package is global command for [Create Karyum App](https://github.com/Karyum
 
 > Don't forget to star the repo :star: and issues are welcomed!
 
-> 3.3.3 Deleted local repo after it was clone, Fixed missing module bug.
+> 3.3.3 Deleted local repo after it was cloned, Fixed missing module bug.
 
 _This is a super basic React setup with bunch of technologies that are widely used with it. for example: Webpack (production & dev config), Express.js backend, styled-components for CSS and ESLint._
 
