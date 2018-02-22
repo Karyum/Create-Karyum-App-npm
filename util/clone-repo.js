@@ -1,28 +1,23 @@
-const { spawn, exec } = require('child_process');
+const { spawn } = require('child_process');
+const pathModule = require('path');
 
-exports.clone = (repo, targetPath, cb) => {
-  const process = spawn('git', ['clone', repo, targetPath]);
+module.exports = ({ repo, path }) => {
+  console.log(repo, pathModule.resolve(path));
+  return new Promise((resolve, reject) => {
+    const process = spawn('git', ['clone', repo, pathModule.resolve(path)]);
 
-  process.on('close', status => {
-    if (status === 0) {
-      cb && cb();
-    } else {
-      cb && cb(new Error("'git clone' failed with status " + status));
-    }
-  });
-};
+    process.stderr.on('data', data => {
+      console.log(
+        'an error occurred please raise an issue if this continues https://github.com/Karyum/Create-Karyum-App-npm',
+      );
+    });
 
-exports.removeRepo = (repo, targetPath, cb) => {
-  exec(`rm -rf ${targetPath}/.git`, (err, stdout, stderr) => {
-    if (err) {
-      cb &&
-        cb(
-          new Error(
-            'Something went wrong please try again. if you problem was not resolved please raise an issue on the matter https://github.com/Karyum/Create-Karyum-App-npm'
-          )
-        );
-    } else {
-      cb && cb();
-    }
+    return process.on('close', status => {
+      if (status === 0) {
+        resolve();
+      } else {
+        reject(new Error("'git clone' failed with status " + status));
+      }
+    });
   });
 };
